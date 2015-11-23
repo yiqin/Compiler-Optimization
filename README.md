@@ -78,7 +78,7 @@ Socket(s):         	1
 NUMA node(s):      	1
 Vendor ID:         	GenuineIntel
 CPU family:        	6
-Model:               	60
+Model:              60
 Stepping:          	3
 CPU MHz:           	3200.000
 BogoMIPS:          	6784.63
