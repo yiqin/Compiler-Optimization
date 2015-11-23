@@ -66,29 +66,30 @@ In the dataset - 1, there is no plateau. In the dataset -2, we can see plateaus.
 
 First, we check CPU details on the machine:
 
-Item  | Value
-------------- | -------------
-| Architecture:      |	x86_64 |
-| CPU op-mode(s):    |    32-bit, 64-bit |
-| Byte Order:        |	Little Endian |
-| CPU(s):            |	8 |
-| On-line CPU(s) list:|   0-7 |
-| Thread(s) per core:|    2 |
-| Core(s) per socket:|	4 |
-| Socket(s): |        	1 |
-| NUMA node(s):|      	1 |
-| Vendor ID:    |     	GenuineIntel |
-| CPU family:    |    	6 |
-| Model:          |     	60 |
-| Stepping:       |   	3 |
-| CPU MHz:         |  	3200.000 |
-| BogoMIPS:         | 	6784.63 |
-| Virtualization:    |	VT-x |
-| L1d cache:     |    	32K |
-| L1i cache:      |   	32K |
-| L2 cache:       |   	256K |
-| L3 cache:       |   	8192K |
-| NUMA node0 CPU(s):| 	0-7 |
+```
+Architecture:      	x86_64
+CPU op-mode(s):    	32-bit, 64-bit
+Byte Order:        	Little Endian
+CPU(s):            	8
+On-line CPU(s) list:0-7
+Thread(s) per core:	2
+Core(s) per socket:	4
+Socket(s):         	1
+NUMA node(s):      	1
+Vendor ID:         	GenuineIntel
+CPU family:        	6
+Model:               	60
+Stepping:          	3
+CPU MHz:           	3200.000
+BogoMIPS:          	6784.63
+Virtualization:    	VT-x
+L1d cache:         	32K
+L1i cache:         	32K
+L2 cache:          	256K
+L3 cache:          	8192K
+NUMA node0 CPU(s): 	0-7
+
+```
 
 L1d cache and L1i cache are 32K, which is 32768 bytes. The int is 4 bytes. So each cache can hold 8192 int. It’s possible that one vector is stored in two caches. If one vector is stored in two different caches, the normalized execution increases. 
 
