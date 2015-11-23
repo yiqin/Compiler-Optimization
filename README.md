@@ -66,6 +66,8 @@ In the dataset - 1, there is no plateau. In the dataset -2, we can see plateaus.
 
 First, we check CPU details on the machine:
 
+Item  | Value
+------------- | -------------
 | Architecture:      |	x86_64 |
 | CPU op-mode(s):    |    32-bit, 64-bit |
 | Byte Order:        |	Little Endian |
